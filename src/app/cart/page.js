@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Product() {
   return (
     <>
-      <main className="main">
         <div className="cart__category">
           <p className="cart__category__text">
             Home{" "}
@@ -188,7 +187,6 @@ export default function Product() {
                 </div>
             </div>
         </section>
-      </main>
     </>
   );
 }

@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Product() {
   return (
     <>
-      <main className="main">
         <div className="productmain__category">
           <p className="productmain__category__text">
             Home{" "}
@@ -889,7 +888,6 @@ export default function Product() {
             </div>
           </div>
         </section>
-      </main>
     </>
   );
 }

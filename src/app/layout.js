@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
         <TopHeader />
         <Header />
-        <main>
+        <main className="main">
             {children}
         </main>  
         <Footer />

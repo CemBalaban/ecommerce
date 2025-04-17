@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Category() {
   return (
     <>
-      <main className="main">
         <div className="catmain__category">
           <p className="catmain__category__text">
             Home{" "}
@@ -804,7 +803,6 @@ export default function Category() {
             </div>
           </div>
         </section>
-      </main>
     </>
   );
 }

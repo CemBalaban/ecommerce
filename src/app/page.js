@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="main">
         <section className="introduction">
           <div className="container">
             <div className="container__left">
@@ -1086,7 +1085,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
     </>
   );
 }
