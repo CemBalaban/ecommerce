@@ -45,7 +45,6 @@
 }
 
 body{
-  width: 1440px;
   margin: 0;
 
   overflow-x: hidden;
@@ -93,7 +92,6 @@ body{
   justify-content: center;
   align-items: center;
 
-  width: 1440px;
   height: 96px;
   gap: 24px;
 
@@ -197,6 +195,10 @@ body{
         outline: none;
 
         margin: 0;
+
+        & .container__direction__drct__iconres {
+          display: none;
+        }
       }
     }
   }
@@ -251,6 +253,12 @@ body{
   
       & .container__direction {
         gap: 12px;
+
+        & .container__direction__drct {
+          & .container__direction__drct__iconres{
+            display: block;
+          }
+        }
       }
     }
   }
@@ -704,6 +712,7 @@ body{
           width: 100%;
           position: relative;
           right: -50px;
+          margin-left: 16px;
 
           & .container__products__item {
             display: none;
@@ -1005,6 +1014,8 @@ body{
           width: 100%;
           position: relative;
           right: -50px;
+
+          margin-left: 16px;
 
           & .container__products__item {
             display: none;
@@ -1390,6 +1401,7 @@ body{
     justify-content: flex-start;
 
     gap: 12px;
+    margin-left: 100px;
 
     & .productmain__category__text {
       font-family: 'Satoshi Regular';
@@ -1414,6 +1426,7 @@ body{
     height: 530px;
 
     margin-top: 36px;
+    margin-left: 100px;
 
     & .container {
       display: flex;
@@ -1896,6 +1909,7 @@ body{
 
     & .container { 
       margin-top: 80px;
+      margin-left: 100px;
 
       & .container__titles {
         display: flex;
@@ -3896,7 +3910,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1440px !important;
 
   & .container {
       display: flex;
@@ -3905,7 +3918,7 @@ body{
   
       width: 1240px !important;
       height: 180px;
-      margin-left: 100px;
+      margin-left: 140px;
       margin-right: 100px;
   
       background-color: var(--black);
@@ -3914,7 +3927,7 @@ body{
       padding: 36px 64px;
 
       position: relative;
-      top: 120px;
+      top: 90px;
   
       & .container__desc {
   
@@ -3992,6 +4005,8 @@ body{
 
         padding: 24px 32px;
 
+        top: 152px;
+
         & .container__desc {
           margin-bottom: 32px;
           & .container__desc__title {
@@ -4038,7 +4053,6 @@ body{
   flex-direction: column;
   background-color: var(--broken-white);
 
-  width: 1440px;
 
   & .container {
 

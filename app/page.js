@@ -46,7 +46,7 @@ export default function Home() {
           <div className="container__direction">
           <button className="container__direction__drct">
               <Image
-                className="container__direction__drct__icon"
+                className="container__direction__drct__iconres"
                 src="/searchres.png"
                 width={24}
                 height={24}
