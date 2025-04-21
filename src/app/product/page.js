@@ -157,21 +157,22 @@ export default function Product() {
           </div>
         </div>
       </section>
-      <section className="review">
+      <section className="tab">
         <div className="container">
           <div className="container__titles">
-            <h5 className="container__titles__title">Product Details</h5>
-            <h5 className="container__titles__title container__titles--black">
+            <div className="container__titles__title">Product Details</div>
+            <div className="container__titles__title container__titles--black">
               Rating & Reviews
-            </h5>
-            <h5 className="container__titles__title">FAQs</h5>
+            </div>
+            <div className="container__titles__title">FAQs</div>
           </div>
           <div className="container__line">
             <div className="container__inline"></div>
           </div>
           <div className="container__top">
             <h4 className="container__top__title">
-              All Reviews <span className="container__top__amount">(451)</span>
+              All Reviews{" "}
+              <span className="container__top__amount">(451)</span>
             </h4>
             <div className="container__top__right">
               <div className="container__top__right__filter"></div>
@@ -192,367 +193,377 @@ export default function Product() {
               </div>
             </div>
           </div>
-          <div className="container__middle">
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__hstar"
-                    src="/hstar.png"
-                    width={10.74}
-                    height={24.71}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">
-                  Samantha D.
-                </p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;I absolutely love this t-shirt! The design is unique and
-                  the fabric feels so comfortable. As a fellow designer, I
-                  appreciate the attention to detail. It&apos;s become my
-                  favorite go-to shirt.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 14, 2023
-                </p>
-              </div>
-            </div>
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">Alex M.</p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;The t-shirt exceeded my expectations! The colors are
-                  vibrant and the print quality is top-notch. Being a UI/UX
-                  designer myself, I&apos;m quite picky about aesthetics, and
-                  this t-shirt definitely gets a thumbs up from me.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 15, 2023
-                </p>
-              </div>
-            </div>
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__hstar"
-                    src="/hstar.png"
-                    width={10.74}
-                    height={24.71}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">Ethan R.</p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;This t-shirt is a must-have for anyone who appreciates
-                  good design. The minimalistic yet stylish pattern caught my
-                  eye, and the fit is perfect. I can see the designer&apos;s
-                  touch in every aspect of this shirt.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 16, 2023
-                </p>
-              </div>
-            </div>
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">Olivia P.</p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;As a UI/UX enthusiast, I value simplicity and
-                  functionality. This t-shirt not only represents those
-                  principles but also feels great to wear. It&apos;s evident
-                  that the designer poured their creativity into making this
-                  t-shirt stand out.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 17, 2023
-                </p>
-              </div>
-            </div>
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">Liam K.</p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;This t-shirt is a fusion of comfort and creativity. The
-                  fabric is soft, and the design speaks volumes about the
-                  designer&apos;s skill. It&apos;s like wearing a piece of art
-                  that reflects my passion for both design and fashion.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 18, 2023
-                </p>
-              </div>
-            </div>
-            <div className="container__middle__cart">
-              <div className="container__middle__cart__stars">
-                <div className="container__middle__cart__stars__star">
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__fstar"
-                    src="/fstar.png"
-                    width={22.58}
-                    height={22.58}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__middle__cart__stars__star__hstar"
-                    src="/hstar.png"
-                    width={10.74}
-                    height={24.71}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__stars__details"></div>
-              </div>
-              <div className="container__middle__cart__name">
-                <p className="container__middle__cart__name__text">Ava H.</p>
-                <Image
-                  className="container__middle__cart__verify"
-                  src="/confirmed.png"
-                  width={19.5}
-                  height={19.5}
-                  alt=""
-                ></Image>
-              </div>
-              <div className="container__middle__cart__desc">
-                <p className="container__middle__cart__desc__text">
-                  &quot;I&apos;m not just wearing a t-shirt; I&apos;m wearing a
-                  piece of design philosophy. The intricate details and
-                  thoughtful layout of the design make this shirt a conversation
-                  starter.&quot;
-                </p>
-                <p className="container__middle__cart__desc__dt">
-                  Posted on August 19, 2023
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="container__bottom">
-            <button className="container__bottom__button">
-              Load More Reviews
-            </button>
-          </div>
         </div>
+        <section className="productdetails"></section>
+        <section className="review">
+          <div className="container">
+            <div className="container__middle">
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__hstar"
+                      src="/hstar.png"
+                      width={10.74}
+                      height={24.71}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">
+                    Samantha D.
+                  </p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;I absolutely love this t-shirt! The design is unique
+                    and the fabric feels so comfortable. As a fellow designer, I
+                    appreciate the attention to detail. It&apos;s become my
+                    favorite go-to shirt.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 14, 2023
+                  </p>
+                </div>
+              </div>
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">Alex M.</p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;The t-shirt exceeded my expectations! The colors are
+                    vibrant and the print quality is top-notch. Being a UI/UX
+                    designer myself, I&apos;m quite picky about aesthetics, and
+                    this t-shirt definitely gets a thumbs up from me.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 15, 2023
+                  </p>
+                </div>
+              </div>
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__hstar"
+                      src="/hstar.png"
+                      width={10.74}
+                      height={24.71}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">
+                    Ethan R.
+                  </p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;This t-shirt is a must-have for anyone who appreciates
+                    good design. The minimalistic yet stylish pattern caught my
+                    eye, and the fit is perfect. I can see the designer&apos;s
+                    touch in every aspect of this shirt.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 16, 2023
+                  </p>
+                </div>
+              </div>
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">
+                    Olivia P.
+                  </p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;As a UI/UX enthusiast, I value simplicity and
+                    functionality. This t-shirt not only represents those
+                    principles but also feels great to wear. It&apos;s evident
+                    that the designer poured their creativity into making this
+                    t-shirt stand out.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 17, 2023
+                  </p>
+                </div>
+              </div>
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">Liam K.</p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;This t-shirt is a fusion of comfort and creativity.
+                    The fabric is soft, and the design speaks volumes about the
+                    designer&apos;s skill. It&apos;s like wearing a piece of art
+                    that reflects my passion for both design and fashion.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 18, 2023
+                  </p>
+                </div>
+              </div>
+              <div className="container__middle__cart">
+                <div className="container__middle__cart__stars">
+                  <div className="container__middle__cart__stars__star">
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__fstar"
+                      src="/fstar.png"
+                      width={22.58}
+                      height={22.58}
+                      alt=""
+                    ></Image>
+                    <Image
+                      className="container__middle__cart__stars__star__hstar"
+                      src="/hstar.png"
+                      width={10.74}
+                      height={24.71}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div className="container__middle__cart__stars__details"></div>
+                </div>
+                <div className="container__middle__cart__name">
+                  <p className="container__middle__cart__name__text">Ava H.</p>
+                  <Image
+                    className="container__middle__cart__verify"
+                    src="/confirmed.png"
+                    width={19.5}
+                    height={19.5}
+                    alt=""
+                  ></Image>
+                </div>
+                <div className="container__middle__cart__desc">
+                  <p className="container__middle__cart__desc__text">
+                    &quot;I&apos;m not just wearing a t-shirt; I&apos;m wearing
+                    a piece of design philosophy. The intricate details and
+                    thoughtful layout of the design make this shirt a
+                    conversation starter.&quot;
+                  </p>
+                  <p className="container__middle__cart__desc__dt">
+                    Posted on August 19, 2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="container__bottom">
+              <button className="container__bottom__button">
+                Load More Reviews
+              </button>
+            </div>
+          </div>
+        </section>
+        <section className="faqs"></section>
       </section>
       <section className="suggest">
         <div className="container">
