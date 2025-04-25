@@ -1,44 +1,142 @@
 import Image from "next/image";
+import ReviewList from "../../component/elements/ReviewList";
+import Itemlist from "../../component/elements/Itemlist";
+
+const reviews = [
+  {
+    name: "Samantha D.",
+    date: "August 14, 2023",
+    text: "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail.",
+    stars: 4.5,
+    verified: true,
+  },
+  {
+    name: "Alex M.",
+    date: "August 15, 2023",
+    text: "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch.",
+    stars: 4,
+    verified: true,
+  },
+  {
+    name: "Ethan R.",
+    date: "August 16, 2023",
+    text: "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+    stars: 3.5,
+    verified: true,
+  },
+  {
+    name: "Olivia P.",
+    date: "August 17, 2023",
+    text: "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+    stars: 3.5,
+    verified: true,
+  },
+  {
+    name: "Liam K.",
+    date: "August 18, 2023",
+    text: "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    stars: 4,
+    verified: true,
+  },
+  {
+    name: "Ava H.",
+    date: "August 19, 2023",
+    text: "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+    stars: 4.5,
+    verified: true,
+  },
+];
+
+const mightLike = [
+  {
+    title: "Polo with Contrast Trims",
+    imageClass: "contrastpolo",
+    rating: 4,
+    salePrice: 212,
+    originalPrice: 232,
+    discount: 20,
+    isResponsive: false,
+  },
+  {
+    title: "Gradient Graphic T-shirt",
+    imageClass: "gradientgraphic",
+    rating: 3.5,
+    originalPrice: 145,
+    isResponsive: false,
+  },
+  {
+    title: "Polo with Tipping Details",
+    imageClass: "tippingpolo",
+    rating: 4.5,
+    originalPrice: 180,
+    isResponsive: false,
+  },
+  {
+    title: "Black Striped T-shirt",
+    imageClass: "blackstriped",
+    rating: 5,
+    salePrice: 120,
+    originalPrice: 150,
+    discount: 30,
+    isResponsive: false,
+  },
+  {
+    title: "Polo with Contrast Trims",
+    imageClass: "contrastpolo",
+    rating: 4,
+    salePrice: 212,
+    originalPrice: 232,
+    discount: 20,
+    isResponsive: true,
+  },
+  {
+    title: "Gradient Graphic T-shirt",
+    imageClass: "gradientgraphic",
+    rating: 3.5,
+    originalPrice: 145,
+    isResponsive: true,
+  },
+];
 
 export default function Product() {
   return (
     <>
-      <div className="productmain__category">
-        <p className="productmain__category__text">
-          Home{" "}
-          <Image
-            className="productmain__category__img"
-            src="/rdirect.png"
-            width={7}
-            height={12}
-            alt=""
-          ></Image>
-        </p>
-        <p className="productmain__category__text">
-          Shop{" "}
-          <Image
-            className="productmain__category__img"
-            src="/rdirect.png"
-            width={7}
-            height={12}
-            alt=""
-          ></Image>
-        </p>
-        <p className="productmain__category__text">
-          Men{" "}
-          <Image
-            className="productmain__category__img"
-            src="/rdirect.png"
-            width={7}
-            height={12}
-            alt=""
-          ></Image>
-        </p>
-        <p className="productmain__category__text productmain__category--black">
-          T-shirts
-        </p>
-      </div>
       <section className="product">
+        <div className="productmain__category">
+          <p className="productmain__category__text">
+            Home{" "}
+            <Image
+              className="productmain__category__img"
+              src="/rdirect.png"
+              width={7}
+              height={12}
+              alt=""
+            ></Image>
+          </p>
+          <p className="productmain__category__text">
+            Shop{" "}
+            <Image
+              className="productmain__category__img"
+              src="/rdirect.png"
+              width={7}
+              height={12}
+              alt=""
+            ></Image>
+          </p>
+          <p className="productmain__category__text">
+            Men{" "}
+            <Image
+              className="productmain__category__img"
+              src="/rdirect.png"
+              width={7}
+              height={12}
+              alt=""
+            ></Image>
+          </p>
+          <p className="productmain__category__text productmain__category--black">
+            T-shirts
+          </p>
+        </div>
         <div className="container">
           <div className="container__left">
             <div className="container__left__img container__left__side1"></div>
@@ -171,8 +269,7 @@ export default function Product() {
           </div>
           <div className="container__top">
             <h4 className="container__top__title">
-              All Reviews{" "}
-              <span className="container__top__amount">(451)</span>
+              All Reviews <span className="container__top__amount">(451)</span>
             </h4>
             <div className="container__top__right">
               <div className="container__top__right__filter"></div>
@@ -195,699 +292,10 @@ export default function Product() {
           </div>
         </div>
         <section className="productdetails"></section>
-        <section className="review">
-          <div className="container">
-            <div className="container__middle">
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__hstar"
-                      src="/hstar.png"
-                      width={10.74}
-                      height={24.71}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">
-                    Samantha D.
-                  </p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;I absolutely love this t-shirt! The design is unique
-                    and the fabric feels so comfortable. As a fellow designer, I
-                    appreciate the attention to detail. It&apos;s become my
-                    favorite go-to shirt.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 14, 2023
-                  </p>
-                </div>
-              </div>
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">Alex M.</p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;The t-shirt exceeded my expectations! The colors are
-                    vibrant and the print quality is top-notch. Being a UI/UX
-                    designer myself, I&apos;m quite picky about aesthetics, and
-                    this t-shirt definitely gets a thumbs up from me.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 15, 2023
-                  </p>
-                </div>
-              </div>
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__hstar"
-                      src="/hstar.png"
-                      width={10.74}
-                      height={24.71}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">
-                    Ethan R.
-                  </p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;This t-shirt is a must-have for anyone who appreciates
-                    good design. The minimalistic yet stylish pattern caught my
-                    eye, and the fit is perfect. I can see the designer&apos;s
-                    touch in every aspect of this shirt.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 16, 2023
-                  </p>
-                </div>
-              </div>
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">
-                    Olivia P.
-                  </p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;As a UI/UX enthusiast, I value simplicity and
-                    functionality. This t-shirt not only represents those
-                    principles but also feels great to wear. It&apos;s evident
-                    that the designer poured their creativity into making this
-                    t-shirt stand out.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 17, 2023
-                  </p>
-                </div>
-              </div>
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">Liam K.</p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;This t-shirt is a fusion of comfort and creativity.
-                    The fabric is soft, and the design speaks volumes about the
-                    designer&apos;s skill. It&apos;s like wearing a piece of art
-                    that reflects my passion for both design and fashion.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 18, 2023
-                  </p>
-                </div>
-              </div>
-              <div className="container__middle__cart">
-                <div className="container__middle__cart__stars">
-                  <div className="container__middle__cart__stars__star">
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__fstar"
-                      src="/fstar.png"
-                      width={22.58}
-                      height={22.58}
-                      alt=""
-                    ></Image>
-                    <Image
-                      className="container__middle__cart__stars__star__hstar"
-                      src="/hstar.png"
-                      width={10.74}
-                      height={24.71}
-                      alt=""
-                    ></Image>
-                  </div>
-                  <div className="container__middle__cart__stars__details"></div>
-                </div>
-                <div className="container__middle__cart__name">
-                  <p className="container__middle__cart__name__text">Ava H.</p>
-                  <Image
-                    className="container__middle__cart__verify"
-                    src="/confirmed.png"
-                    width={19.5}
-                    height={19.5}
-                    alt=""
-                  ></Image>
-                </div>
-                <div className="container__middle__cart__desc">
-                  <p className="container__middle__cart__desc__text">
-                    &quot;I&apos;m not just wearing a t-shirt; I&apos;m wearing
-                    a piece of design philosophy. The intricate details and
-                    thoughtful layout of the design make this shirt a
-                    conversation starter.&quot;
-                  </p>
-                  <p className="container__middle__cart__desc__dt">
-                    Posted on August 19, 2023
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="container__bottom">
-              <button className="container__bottom__button">
-                Load More Reviews
-              </button>
-            </div>
-          </div>
-        </section>
+        <ReviewList reviews={reviews} />
         <section className="faqs"></section>
       </section>
-      <section className="suggest">
-        <div className="container">
-          <h2 className="container__title">YOU MIGHT ALSO LIKE</h2>
-          <div className="container__products">
-            <div className="container__products__itemres">
-              <div className="container__products__itemres__image container__products__itemres__image__contrastpolo"></div>
-              <div className="container__products__itemres__specs">
-                <p className="container__products__itemres__specs__title">
-                  Polo with Contrast Trims
-                </p>
-                <div className="container__products__itemres__specs__rate">
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__itemres__specs__rate__rates">
-                    4.0/
-                    <span className="container__products__itemres__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <div className="container__products__itemres__specs__sale">
-                  <p className="container__products__itemres__specs__sale__price container__products__itemres__specs__price">
-                    $212
-                  </p>
-                  <p className="container__products__itemres__specs__sale__eprice">
-                    $242
-                  </p>
-                  <p className="container__products__itemres__specs__sale__discount">
-                    -20%
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="container__products__itemres">
-              <div className="container__products__itemres__image container__products__itemres__image__gradientgraphic"></div>
-              <div className="container__products__itemres__specs">
-                <p className="container__products__itemres__specs__title">
-                  Gradient Graphic T-shirt
-                </p>
-                <div className="container__products__itemres__specs__rate">
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={13.99}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__itemres__specs__rate__fstar"
-                    src="/hstar.png"
-                    width={7.36}
-                    height={13.99}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__itemres__specs__rate__rates">
-                    3.5/
-                    <span className="container__products__itemres__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <p className="container__products__itemres__specs__sale__price container__products__itemres__specs__price">
-                  $145
-                </p>
-              </div>
-            </div>
-            <div className="container__products__item">
-              <div className="container__products__item__image container__products__item__image--contrastpolo"></div>
-              <div className="container__products__item__specs">
-                <p className="container__products__item__specs__title">
-                  Polo with Contrast Trims
-                </p>
-                <div className="container__products__item__specs__rate">
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__item__specs__rate__rates">
-                    4.0/
-                    <span className="container__products__item__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <div className="container__products__item__specs__sale">
-                  <p className="container__products__item__specs__sale__price container__products__item__specs__price">
-                    $212
-                  </p>
-                  <p className="container__products__item__specs__sale__eprice">
-                    $232
-                  </p>
-                  <p className="container__products__item__specs__sale__discount">
-                    -20%
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="container__products__item">
-              <div className="container__products__item__image container__products__item__image--gradientgraph"></div>
-              <div className="container__products__item__specs">
-                <p className="container__products__item__specs__title">
-                  Gradient Graphic T-shirt
-                </p>
-                <div className="container__products__item__specs__rate">
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__hstar"
-                    src="/hstar.png"
-                    width={7.79}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__item__specs__rate__rates">
-                    3.5/
-                    <span className="container__products__item__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <p className="container__products__item__specs__price">$145</p>
-              </div>
-            </div>
-            <div className="container__products__item">
-              <div className="container__products__item__image container__products__item__image--tippingpolo"></div>
-              <div className="container__products__item__specs">
-                <p className="container__products__item__specs__title">
-                  Polo with Tipping Details
-                </p>
-                <div className="container__products__item__specs__rate">
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__hstar"
-                    src="/hstar.png"
-                    width={7.79}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__item__specs__rate__rates">
-                    4.5/
-                    <span className="container__products__item__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <p className="container__products__item__specs__price">$180</p>
-              </div>
-            </div>
-            <div className="container__products__item">
-              <div className="container__products__item__image container__products__item__image--blackstriped"></div>
-              <div className="container__products__item__specs">
-                <p className="container__products__item__specs__title">
-                  Black Striped T-shirt
-                </p>
-                <div className="container__products__item__specs__rate">
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <Image
-                    className="container__products__item__specs__rate__fstar"
-                    src="/fstar.png"
-                    width={18.49}
-                    height={18.49}
-                    alt=""
-                  ></Image>
-                  <p className="container__products__item__specs__rate__rates">
-                    5/
-                    <span className="container__products__item__specs__rate__faded">
-                      5
-                    </span>
-                  </p>
-                </div>
-                <div className="container__products__item__specs__sale">
-                  <p className="container__products__item__specs__sale__price container__products__item__specs__price">
-                    $120
-                  </p>
-                  <p className="container__products__item__specs__sale__eprice">
-                    $150
-                  </p>
-                  <p className="container__products__item__specs__sale__discount">
-                    -30%
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Itemlist title="YOU MIGHT ALSO LIKE" products={mightLike} />
     </>
   );
 }

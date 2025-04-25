@@ -609,6 +609,23 @@ body{
             background-image: url('/sleevetshirt.png');
           }
 
+          & .container__products__item__image__verticalstriped {
+            background-color: var(--broken-white);
+            background-image: url('/verticalstriped.png');
+          }
+          & .container__products__item__image__couragegraphic {
+            background-color: var(--broken-white);
+            background-image: url('/couragegraphic.png');
+          }
+          & .container__products__item__image__loosefitbermuda {
+            background-color: var(--broken-white);
+            background-image: url('/loosefitbermuda.png');
+          }
+          & .container__products__item__image__fadedskinny {
+            background-color: var(--broken-white);
+            background-image: url('/fadedskinny.png');
+          }
+          
           & .container__products__item__specs {
             width: 225px;
             height: 94px;
@@ -900,19 +917,19 @@ body{
             height: 298px;
           }
 
-          & .container__products__item__image__tapetshirt {
+          & .container__products__item__image__verticalstriped {
             background-color: var(--broken-white);
             background-image: url('/verticalstriped.png');
           }
-          & .container__products__item__image__skinnyjean {
+          & .container__products__item__image__couragegraphic {
             background-color: var(--broken-white);
             background-image: url('/couragegraphic.png');
           }
-          & .container__products__item__image__checkeredshirt {
+          & .container__products__item__image__loosefitbermuda {
             background-color: var(--broken-white);
             background-image: url('/loosefitbermuda.png');
           }
-          & .container__products__item__image__sleevetshirt {
+          & .container__products__item__image__fadedskinny {
             background-color: var(--broken-white);
             background-image: url('/fadedskinny.png');
           }
@@ -1392,44 +1409,48 @@ body{
     }
   }
 
-  & .productmain__category {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 12px;
-    margin-left: 100px;
-
-    & .productmain__category__text {
-      font-family: 'Satoshi Regular';
-      font-size: 16px;
-      color: var(--black60);
-      margin: 0;
-    }
-
-    & .productmain__category__img {
-      margin-left: 4px;
-    }
-
-    & .productmain__category--black {
-      color: black;
-    }
-  }
-
-  @media (max-width: 392px) {
-    & .productmain__category {
-      margin-left: 16px;
-    }
-  }
+ 
 
   & .product {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    width: 1240px;
     height: 530px;
 
-    margin-top: 36px;
-    margin-left: 100px;
+    & .productmain__category {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+  
+      gap: 12px;
+      width: 1240px;
+
+      margin-top: 36px;
+      margin-bottom: 36px;
+  
+      & .productmain__category__text {
+        font-family: 'Satoshi Regular';
+        font-size: 16px;
+        color: var(--black60);
+        margin: 0;
+      }
+  
+      & .productmain__category__img {
+        margin-left: 4px;
+      }
+  
+      & .productmain__category--black {
+        color: black;
+      }
+    }
+  
+    @media (max-width: 392px) {
+      & .productmain__category {
+        margin-left: 16px;
+      }
+    }
 
     & .container {
       display: flex;
@@ -1909,9 +1930,12 @@ body{
   }
 
   & .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     & .container {
-      margin-top: 80px;
-      margin-left: 100px;
+      margin-top: 116px;
 
       & .container__titles {
         display: flex;
@@ -2136,8 +2160,9 @@ body{
   & .review {
 
     & .container { 
-      margin-left: 100px;
       margin-top: 0px;
+
+      width: 1240px;
 
       & .container__middle {
         display: flex;
@@ -2250,6 +2275,8 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        width: 100%;
 
         margin-top: 36px;
 
@@ -2634,36 +2661,39 @@ body{
     }
   }
 
-  & .catmain__category {
-    display: flex;
-    flex-direction: row;
-
-    margin-left: 100px;
-
-    & .catmain__category__text {
-      font-family: 'Satoshi Regular';
-      font-size: 16px;
-      color: var(--black60);
-      margin: 0;
-    }
-
-    & .catmain__category__img {
-      margin-left: 4px;
-      margin-right: 12px;
-    }
-
-    & .catmain__category__text--black {
-      color: var(--black);
-    }
-  }
-
-  @media (max-width : 392px) {
-    & .catmain__category {
-      margin-left: 16px;
-    }
-  }
-
   & .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .catmain__category {
+      display: flex;
+      flex-direction: row;
+  
+      width: 1240px;
+      & .catmain__category__text {
+        font-family: 'Satoshi Regular';
+        font-size: 16px;
+        color: var(--black60);
+        margin: 0;
+      }
+  
+      & .catmain__category__img {
+        margin-left: 4px;
+        margin-right: 12px;
+      }
+  
+      & .catmain__category__text--black {
+        color: var(--black);
+      }
+    }
+  
+    @media (max-width : 392px) {
+      & .catmain__category {
+        margin-left: 16px;
+      }
+    }
 
     & .container {
       display: flex;
@@ -2686,7 +2716,6 @@ body{
 
         padding: 20px 24px;
         margin-top: 24px;
-        margin-left: 100px;
 
         & .container__left__split {
           display: flex;
@@ -2804,7 +2833,7 @@ body{
             }
 
 
-            & .container__left__price__line--black {
+            & .container__left__price__line__black {
               height: 6px;
               width: 150px;
 
@@ -2853,27 +2882,27 @@ body{
               cursor: pointer;
             }
 
-            & .container__left__colors__color--green {
+            & .container__left__colors__color__green {
               background-color: #00C12B;
             }
             
-            & .container__left__colors__color--red {
+            & .container__left__colors__color__red {
               background-color: #F50606;
             }
             
-            & .container__left__colors__color--yellow {
+            & .container__left__colors__color__yellow {
               background-color: #F5DD06;
             }
             
-            & .container__left__colors__color--orange {
+            & .container__left__colors__color__orange {
               background-color: #F57906;
             }
             
-            & .container__left__colors__color--cyan {
+            & .container__left__colors__color__cyan {
               background-color: #06CAF5;
             }
             
-            & .container__left__colors__color--blue {
+            & .container__left__colors__color__blue {
               background-color: #063AF5;
 
               background-image: url('/tick.png');
@@ -2882,19 +2911,19 @@ body{
               background-size: 13px 9.5px;
             }
             
-            & .container__left__colors__color--purple {
+            & .container__left__colors__color__purple {
               background-color: #7D06F5;
             }
             
-            & .container__left__colors__color--pink {
+            & .container__left__colors__color__pink {
               background-color: #F506A4;
             }
             
-            & .container__left__colors__color--white {
+            & .container__left__colors__color__white {
               background-color: #ffffff;
             }
             
-            & .container__left__colors__color--black {
+            & .container__left__colors__color__black {
               background-color: #000000;
             }
           }
@@ -2944,7 +2973,7 @@ body{
               cursor: pointer;
             }
 
-            & .container__left__sizes__size__item--black {
+            & .container__left__sizes__size__item__black {
               background-color: var(--black);
               color: white;
             }
@@ -3068,7 +3097,7 @@ body{
               display: none;
             }
 
-            & .container__right__titles__right--black {
+            & .container__right__titles__right__black {
               font-family: 'Satoshi Medium';
               font-size: 16px;
               color: var(--black);
@@ -3103,39 +3132,39 @@ body{
               margin-bottom: 16px;
             }
 
-            & .container__right__products__item--gradient {
+            & .container__right__products__item__gradient {
               background-image: url('/gradientgraphic.png');
             }
 
-            & .container__right__products__item--tipping {
+            & .container__right__products__item__tipping {
               background-image: url('/tippingpolo.png');
             }
 
-            & .container__right__products__item--blackstriped {
+            & .container__right__products__item__blackstriped {
               background-image: url('/blackstriped.png');
             }
 
-            & .container__right__products__item--skinny {
+            & .container__right__products__item__skinny {
               background-image: url('/skinnyjean.png');
             }
 
-            & .container__right__products__item--checkered {
+            & .container__right__products__item__checkered {
               background-image: url('/checkeredshirt.png');
             }
 
-            & .container__right__products__item--sleevestriped {
+            & .container__right__products__item__sleevestriped {
               background-image: url('/sleevetshirt.png');
             }
 
-            & .container__right__products__item--verticalstriped {
+            & .container__right__products__item__verticalstriped {
               background-image: url('/verticalstriped.png');
             }
 
-            & .container__right__products__item--courage {
+            & .container__right__products__item__courage {
               background-image: url('/couragegraphic.png');
             }
 
-            & .container__right__products__item--bermuda {
+            & .container__right__products__item__bermuda {
               background-image: url('/loosefitbermuda.png');
             }
   
@@ -3292,7 +3321,7 @@ body{
               margin: 0;
             }
 
-            & .container__right__bottom__middle--black {
+            & .container__right__bottom__middle__black {
               color: black;
               background-color: #0000000F;
 
@@ -3393,27 +3422,27 @@ body{
                 height: 174px;
               }
 
-              & .container__right__products__item--gradient {
+              & .container__right__products__item__gradient {
                 background-image: url('/gradientgraphicres2.png');
               }
   
-              & .container__right__products__item--tipping {
+              & .container__right__products__item__tipping {
                 background-image: url('/tippingpolores2.png');
               }
   
-              & .container__right__products__item--blackstriped {
+              & .container__right__products__item__blackstriped {
                 background-image: url('/blackstripedres2.png');
               }
   
-              & .container__right__products__item--skinny {
+              & .container__right__products__item__skinny {
                 background-image: url('/skinnyjeanres2.png');
               }
   
-              & .container__right__products__item--checkered {
+              & .container__right__products__item__checkered {
                 background-image: url('/checkeredshirtres2.png');
               }
   
-              & .container__right__products__item--sleevestriped {
+              & .container__right__products__item__sleevestriped {
                 background-image: url('/sleevetshirtres2.png');
               }
 
@@ -3456,36 +3485,41 @@ body{
     }
   }
 
-  & .cart__category {
-    display: flex;
-    flex-direction: row;
-    margin-left: 100px;
-
-    & .cart__category__text {
-      font-family: 'Satoshi Regular';
-      font-size: 16px;
-      color: var(--black60);
-
-      margin: 0;
-    }
-
-    & .cart__category__img {
-      margin-left: 4px;
-      margin-right: 12px;
-    }
-
-    & .cart__category__text--black {
-      color: var(--black);
-    }
-  }
-
-  @media (max-width: 392px) {
-    & .cart__category {
-      margin-left: 16px;
-    }
-  }
-
   & .cartpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .cart__category {
+      display: flex;
+      flex-direction: row;
+      
+      width: 1240px;
+
+      & .cart__category__text {
+        font-family: 'Satoshi Regular';
+        font-size: 16px;
+        color: var(--black60);
+  
+        margin: 0;
+      }
+  
+      & .cart__category__img {
+        margin-left: 4px;
+        margin-right: 12px;
+      }
+  
+      & .cart__category__text--black {
+        color: var(--black);
+      }
+    }
+  
+    @media (max-width: 392px) {
+      & .cart__category {
+        margin-left: 16px;
+      }
+    }
 
     & .container {
       display: flex;
@@ -3494,7 +3528,6 @@ body{
       justify-content: center;
 
       margin-top: 24px;
-      margin-left: 100px;
 
       & .container__title {
         font-family: 'Integral CF Bold';

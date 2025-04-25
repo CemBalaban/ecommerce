@@ -1,18 +1,16 @@
- 
-import styles from './TopHeader.module.css';
-import Image from "next/image"; 
- 
+import styles from "./TopHeader.module.css";
+
 const TopHeader = () => {
   return (
-    <header className="topheader">
-        <div className="container">
-        <p className="container__desc">
-            Sign up and get 20% off to your first order.{" "}
-            <a className="container__drct">Sign Up Now</a>
+    <header className={styles.topheader}>
+      <div className={styles.container}>
+        <p className={styles.container__desc}>
+          Sign up and get 20% off to your first order.{" "}
+          <a className={styles.container__drct}>Sign Up Now</a>
         </p>
-        </div>
+      </div>
     </header>
   );
 };
- 
+
 export default TopHeader;

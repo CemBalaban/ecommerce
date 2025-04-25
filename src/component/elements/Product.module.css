@@ -179,7 +179,7 @@
                     height: 37px;
                 }
 
-                & .container__right__colorpicker--brown {
+                & .container__right__colorpicker-brown {
                     background-color: #4F4631;
                     background-image: url('/tick.png');
                     background-repeat: no-repeat;
@@ -187,11 +187,11 @@
                     background-position: center;
                 }
 
-                & .container__right__colorpicker--green {
+                & .container__right__colorpicker-green {
                     background-color: #314F4A;
                 }
 
-                & .container__right__colorpicker--blue {
+                & .container__right__colorpicker-blue {
                     background-color: #31344F;
                 }
             }
@@ -231,10 +231,10 @@
                     }
                 }
 
-                & .container__right__sizes--black {
+                & .container__right__sizes-black {
                     background-color: black;
 
-                    & .container__right__sizes--white {
+                    & .container__right__sizes-white {
                         color: var(--white);
                     }
                 }

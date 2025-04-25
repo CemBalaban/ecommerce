@@ -113,7 +113,7 @@
                         & .container__comments__item__container__rate {
                             margin-bottom: 12px;
 
-                            & .container__comments__item__container__rate__star{
+                            & .container__comments__item__container__rate__star {
                                 width: 19.19px;
                                 height: 19.19px;
                             }
@@ -139,7 +139,7 @@
                             margin-top: 8px;
 
                             width: 310px;
-                        } 
+                        }
                     }
                 }
             }

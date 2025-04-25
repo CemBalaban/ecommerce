@@ -68,15 +68,15 @@
                         background-position: center;
                     }
 
-                    & .container__bottom__left__item--gradient {
+                    & .container__bottom__left__item__gradient {
                         background-image: url('/lgradient.png');
                     }
 
-                    & .container__bottom__left__item--checkered {
+                    & .container__bottom__left__item__checkered {
                         background-image: url('/lcheckered.png');
                     }
 
-                    & .container__bottom__left__item--skinny {
+                    & .container__bottom__left__item__skinny {
                         background-image: url('/lskinny.png');
                     }
 
@@ -112,7 +112,7 @@
                                     margin: 0;
                                 }
 
-                                & .container__bottom__left__item__right__left__top--faded {
+                                & .container__bottom__left__item__right__left__top__faded {
                                     color: var(--black60);
                                 }
                             }
@@ -222,15 +222,15 @@
                             margin: 0;
                         }
 
-                        & .container__bottom__right__prices__line--red {
+                        & .container__bottom__right__prices__line__red {
                             color: var(--openred);
                         }
 
-                        & .container__bottom__right__prices__line--black {
+                        & .container__bottom__right__prices__line__black {
                             color: var(--black);
                         }
 
-                        & .container__bottom__right__prices__line--biggerfont {
+                        & .container__bottom__right__prices__line__biggerfont {
                             font-size: 24px;
                         }
 
@@ -351,15 +351,15 @@
                             height: 99px;
                         }
 
-                        & .container__bottom__left__item--skinny {
+                        & .container__bottom__left__item__skinny {
                             background-size: 99px 99px;
                         }
 
-                        & .container__bottom__left__item--gradient {
+                        & .container__bottom__left__item__gradient {
                             background-size: 99px 99px;
                         }
 
-                        & .container__bottom__left__item--checkered {
+                        & .container__bottom__left__item__checkered {
                             background-size: 99px 99px;
                         }
 
@@ -367,7 +367,7 @@
 
                             & .container__bottom__left__item__right__side {
                                 position: absolute;
-                                right: 4px;
+                                right: 32px;
                             }
 
                             & .container__bottom__left__item__right__left {
