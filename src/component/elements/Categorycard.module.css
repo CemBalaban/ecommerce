@@ -12,7 +12,8 @@
 
     border-radius: 40px;
 
-    width: 1240px;
+    min-width: 1240px;
+    max-width: 1240px;
     height: 866px;
 
     & .container__title {

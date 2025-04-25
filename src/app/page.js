@@ -137,7 +137,6 @@ const comments = [
 export default function Home() {
   return (
     <>
-
         <Hero />
         <section className="brands">
           <div className="container">
