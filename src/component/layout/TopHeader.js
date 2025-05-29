@@ -1,4 +1,4 @@
-import styles from "./TopHeader.module.css";
+import styles from "./TopHeader.module.scss";
 
 const TopHeader = () => {
   return (

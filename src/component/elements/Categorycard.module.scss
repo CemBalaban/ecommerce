@@ -1,0 +1,410 @@
+.browseby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--broken-white);
+
+    border-radius: 40px;
+
+    min-width: 1240px;
+    max-width: 1240px;
+    height: 866px;
+
+    .container__title {
+      font-family: 'Integral CF Bold';
+      font-size: 48px;
+    }
+
+    .container__direction {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      gap: 20px;
+
+      .container__direction__casual {
+        background-image: url('/casual.png');
+      }
+      .container__direction__party {
+        background-image: url('/party.png');
+      }
+      .container__direction__formal {
+        background-image: url('/formal.png');
+      }
+      .container__direction__gym {
+        background-image: url('/gym.png');
+      }
+
+      .container__direction__bigbutton {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        cursor: pointer;
+
+        width: 684px;
+        height: 289px;
+
+        border-radius: 20px;
+
+        border: none;
+        outline: none;
+
+        padding-top: 25px;
+        padding-left: 36px;
+
+        font-family: 'Satoshi Bold';
+        font-size: 36;
+      }
+
+      .container__direction__littlebutton {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        cursor: pointer;
+
+        width: 407px;
+        height: 289px;
+
+        border-radius: 20px;
+
+        border: none;
+        outline: none;
+
+        padding-top: 25px;
+        padding-left: 36px;
+
+        font-family: 'Satoshi Bold';
+        font-size: 36;
+      }
+    }
+  }
+}
+
+@media (max-width: 392px) {
+  .browseby {
+    width: 100%;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 358px;
+      min-width: 358px;
+
+      height: 975px;
+
+      margin-left: 16px;
+      padding-bottom: 26px;
+
+      background-color: var(--broken-white);
+
+      .container__title {
+        font-size: 32px;
+
+        width: 246px;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 28px;
+      }
+
+      .container__direction {
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .container__direction__littlebutton {
+          width: 310px;
+          height: 190px;
+
+          font-size: 24px;
+          padding-top: 16px;
+          padding-left: 24px;
+        }
+
+        .container__direction__bigbutton {
+          width: 310px;
+          height: 190px;
+
+          font-size: 24px;
+          padding-top: 16px;
+          padding-left: 24px;
+        }
+
+        .container__direction__casual {
+          background-image: url('/casualres.png');
+        }
+        .container__direction__party {
+          background-image: url('/partyres.png');
+        }
+        .container__direction__formal {
+          background-image: url('/formalres.png');
+        }
+        .container__direction__gym {
+          background-image: url('/gymres.png');
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 768px) {
+  .browseby {
+    width: 100%;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      max-width: 720px;
+      min-width: 720px;
+
+      height: 600px;
+
+      margin-left: 16px;
+      padding-bottom: 26px;
+
+      background-color: var(--broken-white);
+
+      .container__title {
+        font-size: 32px;
+
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 28px;
+      }
+
+      .container__direction {
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .container__direction__littlebutton {
+          width: 310px;
+          height: 190px;
+
+          font-size: 24px;
+          padding-top: 16px;
+          padding-left: 24px;
+        }
+
+        .container__direction__bigbutton {
+          width: 310px;
+          height: 190px;
+
+          font-size: 24px;
+          padding-top: 16px;
+          padding-left: 24px;
+        }
+
+        .container__direction__casual {
+          background-image: url('/casualres.png');
+        }
+        .container__direction__party {
+          background-image: url('/partyres.png');
+        }
+        .container__direction__formal {
+          background-image: url('/formalres.png');
+        }
+        .container__direction__gym {
+          background-image: url('/gymres.png');
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 992px) {
+  .browseby {
+    width: 100%;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      max-width: 960px;
+      min-width: 960px;
+
+      height: auto;
+
+      margin-left: 16px;
+      padding-bottom: 26px;
+
+      background-color: var(--broken-white);
+
+      .container__title {
+        font-size: 32px;
+
+        width: 246px;
+
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 28px;
+      }
+
+      .container__direction {
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .container__direction__bigbutton {
+          width: 564px;
+          height: 239px;
+  
+          padding-top: 25px;
+          padding-left: 36px;
+        }
+  
+        .container__direction__littlebutton {  
+          width: 336px;
+          height: 239px;
+
+          padding-top: 25px;
+          padding-left: 36px;
+        }
+
+        .container__direction__casual {
+          background-image: url('/casual.png');
+          background-repeat: no-repeat;
+          background-size: 336px 239px;
+        }
+        .container__direction__party {
+          background-image: url('/party.png');
+          background-repeat: no-repeat;
+          background-size: 564px 239px;
+        }
+        .container__direction__formal {
+          background-image: url('/formal.png');
+          background-repeat: no-repeat;
+          background-size: 564px 239px;
+        }
+        .container__direction__gym {
+          background-image: url('/gym.png');
+          background-repeat: no-repeat;
+          background-size: 336px 239px;
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 1200px) {
+  .browseby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      border-radius: 40px;
+
+      min-width: 1200px;
+
+      .container__title {
+        font-family: 'Integral CF Bold';
+        font-size: 48px;
+        width: 1200px;
+
+        text-align: center;
+      }
+
+      .container__direction {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        gap: 20px;
+
+        .container__direction__casual {
+          background-image: url('/casual.png');
+          background-size: 407px 289px;
+          width: 407px;
+          height: 289px;
+        }
+        .container__direction__party {
+          background-image: url('/party.png');
+          background-size: 684px 289px;
+          width: 684px;
+          height: 289px;
+        }
+        .container__direction__formal {
+          background-image: url('/formal.png');
+          background-size: 684px 289px;
+          width: 684px;
+          height: 289px;
+        }
+        .container__direction__gym {
+          background-image: url('/gym.png');
+          background-size: 407px 289px;
+          width: 407px;
+          height: 289px;
+        }
+
+        .container__direction__bigbutton {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          cursor: pointer;
+
+          width: 684px;
+          height: 289px;
+
+          border-radius: 20px;
+
+          border: none;
+          outline: none;
+
+          padding-top: 25px;
+          padding-left: 36px;
+
+          font-family: 'Satoshi Bold';
+          font-size: 36px;
+        }
+
+        .container__direction__littlebutton {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+
+          cursor: pointer;
+
+          width: 407px;
+          height: 289px;
+
+          border-radius: 20px;
+
+          border: none;
+          outline: none;
+
+          padding-top: 25px;
+          padding-left: 36px;
+
+          font-family: 'Satoshi Bold';
+          font-size: 36px;
+        }
+      }
+    }
+  }  
+}

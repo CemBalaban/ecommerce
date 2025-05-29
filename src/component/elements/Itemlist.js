@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Itemlist.module.css";
+import styles from "./Itemlist.module.scss";
 
 const Itemlist = ({ title = "NEW ARRIVALS", products = [] }) => {
   return (
@@ -8,20 +8,19 @@ const Itemlist = ({ title = "NEW ARRIVALS", products = [] }) => {
         <h2 className={styles.container__title}>{title}</h2>
         <div className={styles.container__products}>
           {products.map((product, index) => {
-            const itemType = product.isResponsive ? "itemres" : "item";
 
             return (
-              <div key={index} className={styles[`container__products__${itemType}`]}>
+              <div key={index} className={styles[`container__products__item`]}>
                 <div
-                  className={`${styles[`container__products__${itemType}__image`]} ${styles[`container__products__${itemType}__image__${product.imageClass}`]}`}
+                  className={`${styles[`container__products__item__image`]} ${styles[`container__products__item__image__${product.imageClass}`]}`}
                 ></div>
 
-                <div className={styles[`container__products__${itemType}__specs`]}>
-                  <p className={styles[`container__products__${itemType}__specs__title`]}>
+                <div className={styles[`container__products__item__specs`]}>
+                  <p className={styles[`container__products__item__specs__title`]}>
                     {product.title}
                   </p>
 
-                  <div className={styles[`container__products__${itemType}__specs__rate`]}>
+                  <div className={styles[`container__products__item__specs__rate`]}>
                     {Array.from({ length: 5 }).map((_, i) => {
                       const isHalf = product.rating - i === 0.5;
                       const isFull = i < product.rating && !isHalf;
@@ -32,36 +31,36 @@ const Itemlist = ({ title = "NEW ARRIVALS", products = [] }) => {
                       return (
                         <Image
                           key={i}
-                          className={styles[`container__products__${itemType}__specs__rate__${isFull ? "fstar" : "hstar"}`]}
+                          className={styles[`container__products__item__specs__rate__${isFull ? "fstar" : "hstar"}`]}
                           src={src}
-                          width={product.isResponsive ? (isFull ? 15.47 : 7.36) : (isFull ? 18.49 : 7.79)}
-                          height={product.isResponsive ? 15.47 : 18.49}
+                          width={isFull ? 18.49 : 7.79}
+                          height={18.49}
                           alt=""
                         />
                       );
                     })}
-                    <p className={styles[`container__products__${itemType}__specs__rate__rates`]}>
+                    <p className={styles[`container__products__item__specs__rate__rates`]}>
                       {product.rating}/
-                      <span className={styles[`container__products__${itemType}__specs__rate__faded`]}>
+                      <span className={styles[`container__products__item__specs__rate__faded`]}>
                         5
                       </span>
                     </p>
                   </div>
 
                   {product.salePrice ? (
-                    <div className={styles[`container__products__${itemType}__specs__sale`]}>
-                      <p className={`${styles[`container__products__${itemType}__specs__sale__price`]} ${styles[`container__products__${itemType}__specs__price`]}`}>
+                    <div className={styles[`container__products__item__specs__sale`]}>
+                      <p className={`${styles[`container__products__item__specs__sale__price`]} ${styles[`container__products__item__specs__price`]}`}>
                         ${product.salePrice}
                       </p>
-                      <p className={styles[`container__products__${itemType}__specs__sale__eprice`]}>
+                      <p className={styles[`container__products__item__specs__sale__eprice`]}>
                         ${product.originalPrice}
                       </p>
-                      <p className={styles[`container__products__${itemType}__specs__sale__discount`]}>
+                      <p className={styles[`container__products__item__specs__sale__discount`]}>
                         -{product.discount}%
                       </p>
                     </div>
                   ) : (
-                    <p className={styles[`container__products__${itemType}__specs__price`]}>
+                    <p className={styles[`container__products__item__specs__price`]}>
                       ${product.originalPrice}
                     </p>
                   )}
@@ -71,7 +70,6 @@ const Itemlist = ({ title = "NEW ARRIVALS", products = [] }) => {
           })}
         </div>
         <button className={styles.container__button}>View All</button>
-        <div className={styles.container__line}></div>
       </div>
     </section>
   );

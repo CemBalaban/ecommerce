@@ -1,4 +1,4 @@
-import styles from "./Categorycard.module.css";
+import styles from "./Categorycard.module.scss";
 
 const Categorycard = () => {
   return (

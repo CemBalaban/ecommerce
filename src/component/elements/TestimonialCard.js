@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Testimonials.module.css";
+import styles from "./Testimonials.module.scss";
 
 const TestimonialCard = ({ name, text, stars, verified, blur}) => {
   return (

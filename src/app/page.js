@@ -140,79 +140,22 @@ export default function Home() {
         <Hero />
         <section className="brands">
           <div className="container">
-            <Image
-              className="container__brand"
-              src="/versace.png"
-              width={166.48}
-              height={33.16}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brandres"
-              src="/versaceres.png"
-              width={116.74}
-              height={23.25}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brand"
-              src="/zara.png"
-              width={91}
-              height={38}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brandres"
-              src="/zarares.png"
-              width={63.81}
-              height={26.65}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brand"
-              src="/gucci.png"
-              width={156}
-              height={36}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brandres"
-              src="/guccires.png"
-              width={109.39}
-              height={25.24}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brand"
-              src="/prada.png"
-              width={194}
-              height={32}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brandres"
-              src="/pradares.png"
-              width={127}
-              height={21}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brand"
-              src="/ck.png"
-              width={206.79}
-              height={33.35}
-              alt=""
-            ></Image>
-            <Image
-              className="container__brandres"
-              src="/ckres.png"
-              width={134.84}
-              height={21.75}
-              alt=""
-            ></Image>
+
+            <div className="container__versace"></div>
+
+            <div className="container__zara"></div>
+
+            <div className="container__gucci"></div>
+
+            <div className="container__prada"></div>
+
+            <div className="container__ck"></div>
+
           </div>
         </section>
         <Itemlist title="NEW ARRIVALS" products={newArrivals} />
+
+        <div className="home__line"></div>
 
         <Itemlist title="TOP SELLING" products={topSelling} />
 

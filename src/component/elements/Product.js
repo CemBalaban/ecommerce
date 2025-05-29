@@ -1,4 +1,4 @@
-import styles from "./Product.module.css";
+import styles from "./Product.module.scss";
 import Image from "next/image";
 
 const Products = () => {
@@ -82,17 +82,17 @@ const Products = () => {
           <div className={styles.container__right__colorpicker}>
             <div
               className={`${styles.container__right__colorpicker__color} ${
-                styles.container__right__colorpicker - brown
+                styles.container__right__colorpicker__brown
               }`}
             ></div>
             <div
               className={`${styles.container__right__colorpicker__color} ${
-                styles.container__right__colorpicker - green
+                styles.container__right__colorpicker__green
               }`}
             ></div>
             <div
               className={`${styles.container__right__colorpicker__color} ${
-                styles.container__right__colorpicker - blue
+                styles.container__right__colorpicker__blue
               }`}
             ></div>
           </div>
@@ -111,12 +111,12 @@ const Products = () => {
             </div>
             <div
               className={`${styles.container__right__sizes__size} ${
-                styles.container__right__sizes - black
+                styles.container__right__sizes__black
               }`}
             >
               <p
                 className={`${styles.container__right__sizes__size__text} ${
-                  styles.container__right__sizes - white
+                  styles.container__right__sizes__white
                 }`}
               >
                 Large

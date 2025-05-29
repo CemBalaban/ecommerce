@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Testimonials.module.css";
+import styles from "./Testimonials.module.scss";
 import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = ({ testimonials = []}) => {
